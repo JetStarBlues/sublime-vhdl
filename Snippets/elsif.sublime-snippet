@@ -2,6 +2,9 @@
   <tabTrigger>elsif</tabTrigger>
   <scope>source.vhdl</scope>
   <content>elsif ${1:expression} then
-	$0</content>
+
+	$2
+
+</content>
   <description>elsif</description>
 </snippet>

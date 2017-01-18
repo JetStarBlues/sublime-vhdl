@@ -2,19 +2,22 @@
   <tabTrigger>entarch</tabTrigger>
   <scope>source.vhdl</scope>
   <content>entity ${1:${TM_FILENAME/(.*?)(\..+)/$1/}} is
-  port (
-	${0:clock}
-  ) ;
-end entity ; -- ${1:${TM_FILENAME/(.*?)(\..+)/$1/}}
+
+	port (
+
+		$3
+	);
+
+end entity;
 
 architecture ${2:arch} of ${1:${TM_FILENAME/(.*?)(\..+)/$1/}} is
 
-
+	$4
 
 begin
 
+	$5
 
-
-end architecture ; -- ${2:arch}</content>
+end architecture;</content>
   <description>entity architecture</description>
 </snippet>

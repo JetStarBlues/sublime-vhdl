@@ -1,11 +1,16 @@
 <snippet>
   <tabTrigger>spro</tabTrigger>
   <scope>source.vhdl</scope>
-  <content>${1:identifier} : process( ${2:clock} )
+  <content>process( ${1:clock} )
+
 begin
-	if( rising_edge(${2:clock}) ) then
-		$0
-	end if ;
-end process ; -- ${1:identifier}</content>
+
+	if rising_edge( ${1:clock} ) then
+
+		$2
+
+	end if;
+
+end process;</content>
   <description>synchronous process</description>
 </snippet>

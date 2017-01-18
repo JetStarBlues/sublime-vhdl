@@ -3,10 +3,12 @@
   <scope>source.vhdl</scope>
   <content>architecture ${1:arch} of ${2:${TM_FILENAME/(.*?)(\..+)/$1/}} is
 
-	signal $0
+	$3
 
 begin
 
-end architecture ; -- ${1:arch}</content>
+	$4
+
+end architecture;</content>
   <description>architecture</description>
 </snippet>
